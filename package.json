@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV converted in Puppeteer",
+  "main": "index.js",
+  "dependencies": {
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": 
+  {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolmodzelewski/cv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karolmodzelewski/cv/issues"
+  },
+  "homepage": "https://github.com/karolmodzelewski/cv#readme"
+}
