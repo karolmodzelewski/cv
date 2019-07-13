@@ -11,11 +11,12 @@ body
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     font-size: 15px;
+    border: 3px solid black;
 }
 
 img
 {
-    height: 35px;
+    height: 25px;
 }
 
 p
@@ -23,7 +24,7 @@ p
     text-align: justify;
 }
 
-#header-container
+header
 {
     display: flex;
     justify-content: space-between;
@@ -83,12 +84,7 @@ p
     padding-left: 5px;
 }
 
-section p
-{
-    padding-top: 4px;
-}
-
-#section-container
+section
 {
     padding: 10px;
 }
@@ -96,6 +92,37 @@ section p
 .section-heading
 {
     padding-top: 4px;
+}
+
+.section-content p
+{
+    white-space: pre-line;
+    padding: 5px 0 5px 5px;
+    border-left: 4px solid #e67e22;
+}
+
+.section-content-bold
+{
+    font-weight: bold;
+}
+
+.dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px
+}
+
+.dot-grey
+{
+    background: #d8d8e0;
+}
+
+.dot-orange
+{
+    background: #e67e22;
 }
 
 .grid
@@ -109,31 +136,31 @@ section p
 #section-experience
 {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 1/7;
 }
 
 #section-skills
 {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/4;
 }
 
 #section-education
 {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
 }
 
 #section-languages
 {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 5/6;
 }
 
 #section-interests
 {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 6/7;
 }
 
 footer
