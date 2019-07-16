@@ -12,16 +12,12 @@ body
     margin: auto;
     font-size: 15px;
     border: 3px solid black;
+    text-align: justify;
 }
 
 img
 {
     height: 25px;
-}
-
-p
-{
-    text-align: justify;
 }
 
 header
@@ -42,7 +38,6 @@ header
 
 #header-contact_me
 {
-    
     margin: 5px;
     width: 35%;
 }
@@ -74,11 +69,6 @@ header
     padding: 10px 0;
 }
 
-.header-contact_me-url:hover
-{
-    background: #344d92;
-}
-
 .header-contact_me-url span
 {
     padding-left: 5px;
@@ -89,16 +79,47 @@ section
     padding: 10px;
 }
 
-.section-heading
+section h2, 
+section h3, 
+section h4
+{
+    padding-top: 4px;
+}
+
+section h3
+{
+    display: inline-block;
+    color: #4a69bd;
+    border-bottom: 2px solid #e67e22;
+    padding: 0 10px 2px 0;
+}
+
+section h3:first-of-type
 {
     padding-top: 4px;
 }
 
 .section-content p
 {
-    white-space: pre-line;
+    margin: 5px;
     padding: 5px 0 5px 5px;
+    line-height: 1.1;
+}
+
+.section-content p:not(.section-content-time_period)
+{
     border-left: 4px solid #e67e22;
+}
+
+.section-content-time_period
+{
+    border-left: 3px solid #4a69bd;
+    border-left-style: solid;
+}
+
+.section-content-paragraph
+{
+    white-space: pre-line;
 }
 
 .section-content-bold
@@ -117,7 +138,7 @@ section
 
 .dot-grey
 {
-    background: #d8d8e0;
+    background: #b2b2b8;
 }
 
 .dot-orange
