@@ -8,10 +8,17 @@ Clone or download the repository
 
 Install dependencies:
 > npm install
+
 Live-server:
+
 > npm install -g live-server
+
 > npm run server
+
 or
+
 HTTP-server:
+
 > npm install -g http-server
+
 > npm run server
