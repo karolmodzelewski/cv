@@ -94,6 +94,7 @@ header
     text-decoration: none;
     color: #f5f5f5;
     padding: 10px 0;
+    word-wrap: break-word;
 }
 
 .header-contact_me-url span
@@ -108,9 +109,7 @@ section
     padding: 10px;
 }
 
-section h2, 
-section h3, 
-section h4
+section h2, section h3, section h4
 {
     padding-top: 4px;
 }
@@ -140,40 +139,39 @@ section h5
     grid-row: 1/7;
 }
 
-#section-skills
+#section-skills, #section-education, #section-languages, #section-interests
 {
     grid-column: 2/3;
+}
+
+#section-skills
+{
     grid-row: 1/4;
 }
 
 #section-education
 {
-    grid-column: 2/3;
     grid-row: 4/5;
 }
 
 #section-languages
 {
-    grid-column: 2/3;
     grid-row: 5/6;
 }
 
 #section-interests
 {
-    grid-column: 2/3;
     grid-row: 6/7;
 }
 
-.section-content p,
-.section-content pre
+.section-content p, .section-content pre
 {
     margin: 5px;
     padding: 5px 0 5px 5px;
     line-height: 1.1;
 }
 
-.section-content p:not(.section-content-time_period),
-.section-content pre
+.section-content p:not(.section-content-time_period), .section-content pre
 {
     border-left: 4px solid #e67e22;
 }
@@ -199,7 +197,9 @@ footer
     border-left: 800px solid transparent;
 }
 
-@media only screen and (max-width: 320px)
+/* Media queries */
+
+@media only screen and (max-width: 600px)
 {
     *:not(img)
     {
@@ -209,9 +209,41 @@ footer
     html
     {
         width: 100%;
-        height: auto;
     }
 
+    #section-experience
+    {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    #section-skills
+    {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+
+    #section-education
+    {
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+
+    #section-languages
+    {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #section-interests
+    {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
     .grid
     {
         grid-template-columns: 1fr;
@@ -222,6 +254,11 @@ footer
         flex-direction: column;
     }
 
+    header h1
+    {
+        word-wrap: break-word;
+    }
+
     header h3
     {
         display: flex;
@@ -230,48 +267,36 @@ footer
 
     #header-about_me, #header-contact_me
     {
-        width: auto;
+        width: 100%;
     }
 
-    #header-triangle 
+    #section-experience, #section-skills, #section-education, #section-languages, #section-interests
     {
-        border-top: 25px solid #4a69bd;
-        border-right: 100% solid transparent;
-    }
-
-    #footer-triangle 
-    {
-        border-bottom: 25px solid #4a69bd;
-        border-left: 100% solid transparent;
+        grid-column: 1/2;
     }
 
     #section-experience
     {
-        grid-column: 1/2;
         grid-row: 1/2;
     }
 
     #section-skills
     {
-        grid-column: 1/2;
         grid-row: 2/3;
     }
 
     #section-education
     {
-        grid-column: 1/2;
         grid-row: 3/4;
     }
 
     #section-languages
     {
-        grid-column: 1/2;
         grid-row: 4/5;
     }
 
     #section-interests
     {
-        grid-column: 1/2;
         grid-row: 5/6;
     }
 }
