@@ -8,17 +8,9 @@ Clone or download the repository
 
 Install dependencies:
 > npm install
+> npm install express
 
-Live-server:
+## How to run
 
-> npm install -g live-server
-
-> npm run server
-
-or
-
-HTTP-server:
-
-> npm install -g http-server
-
-> npm run server
+> node app
+> Go to: http://127.0.0.1:8080/
