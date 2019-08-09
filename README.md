@@ -1,20 +1,22 @@
 # cv
 CV created with Puppeteer library
 
+## About
+Main goal of this project was to create my up-to-date CV. I learned something more about Node.js, Express.js and also touched a little bit of Puppeteer library
+
 ## Installation
-
-Clone or download the repository
-> Change path to "cv" folder, for example: cd C:\Users\yourName\Desktop\cv
-
-Install dependencies:
-```bash
+Install npm:
+```
 npm install
+```
+Install Express.js:
+```
 npm install express
 ```
 
 ## How to run
-
-```bash
-node app
-Go to: http://127.0.0.1:8080/
+Open Node.js and run server:
 ```
+node app
+```
+Copy and paste a link into your browser or click directly in this link: http://127.0.0.1:8080/s
