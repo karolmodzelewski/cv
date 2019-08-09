@@ -1,8 +1,7 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "CV converted in Puppeteer",
-  "main": "index.js",
+  "description": "CV created with Puppeteer library",
   "dependencies": {
     "express": "^4.17.1",
     "puppeteer": "^1.18.1"
