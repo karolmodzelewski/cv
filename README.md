@@ -17,6 +17,6 @@ npm install express
 ## How to run
 Open Node.js and run server:
 ```
-npm run server
+node app
 ```
 Copy and paste a link into your browser or click directly in this link: http://127.0.0.1:8080/
